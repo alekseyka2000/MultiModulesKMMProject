@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.example.MultiModulesKMMProject</id>
+    <name>KmmPlugin</name>
+    <vendor>Aliaksey</vendor>
+
+    <description>My multi modules KMM plugin for Android Studio</description>
+    <depends>com.intellij.modules.all</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>com.android.tools.idea.smali</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.android">
+    </extensions>
+
+    <actions>
+        <action id="MultiModulesKMMProject" class="CreateMultiModulesKMMProject"
+                text="New Multi Modules KMM Project" description="CreateMultiModulesKMMProjectPattern">
+            <add-to-group group-id="NewProjectOrModuleGroup" anchor="after" relative-to-action="ProjectFromVersionControl"/>
+        </action>
+    </actions>
+</idea-plugin>
